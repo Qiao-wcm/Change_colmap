@@ -1,0 +1,165 @@
+源代码
+
+==============================================================================
+Partitioning the scene
+==============================================================================
+
+Reading images...
+Reading scene graph...
+Partitioning scene graph...
+Partition 的 image_pairs.size() = 20115
+Partition 的 root_cluster.imageids.size() = 338
+Partition 的 root_cluster.child_clusters.size() = 0
+PartitionCluster 的 edges.size() = 20115
+PartitionCluster 的 cluster.image_ids.size() = 338
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 0 ].image_ids.size() =  191
+PartitionCluster 的 edges.size() = 10080
+PartitionCluster 的 cluster.image_ids.size() = 191
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 0 ].image_ids.size() =  87
+PartitionCluster 的 edges.size() = 2967
+PartitionCluster 的 cluster.image_ids.size() = 87
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 1 ].image_ids.size() =  104
+PartitionCluster 的 edges.size() = 4060
+PartitionCluster 的 cluster.image_ids.size() = 104
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 0 ].image_ids.size() =  70
+PartitionCluster 的 edges.size() = 2248
+PartitionCluster 的 cluster.image_ids.size() = 70
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 1 ].image_ids.size() =  34
+PartitionCluster 的 edges.size() = 527
+PartitionCluster 的 cluster.image_ids.size() = 34
+PartitionCluster 的 cluster.child_clusters.size() = 0
+overlapping_image_ids.size() = 34
+overlapping_image_ids.size() = 50
+overlapping_image_ids.size() = 50
+overlapping_image_ids.size() = 50
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 104
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 154
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 154
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 84
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 134
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 134
+递归调用PartitionCluster时Cluster->child_cluster[ 1 ].image_ids.size() =  147
+PartitionCluster 的 edges.size() = 6518
+PartitionCluster 的 cluster.image_ids.size() = 147
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 0 ].image_ids.size() =  76
+PartitionCluster 的 edges.size() = 2341
+PartitionCluster 的 cluster.image_ids.size() = 76
+PartitionCluster 的 cluster.child_clusters.size() = 0
+递归调用PartitionCluster时Cluster->child_cluster[ 1 ].image_ids.size() =  71
+PartitionCluster 的 edges.size() = 2437
+PartitionCluster 的 cluster.image_ids.size() = 71
+PartitionCluster 的 cluster.child_clusters.size() = 0
+overlapping_image_ids.size() = 50
+overlapping_image_ids.size() = 50
+overlapping_image_ids.size() = 50
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 137
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 187
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 187
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 154
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 154
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 204
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 204
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 134
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 184
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 184
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 204
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 204
+overlapping_image_ids.size() = 50
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 126
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 176
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 176
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 121
+PartitionCluster 的添加公共相机前 child_cluster.image_ids.size() = 171
+PartitionCluster 的添加公共相机后 child_cluster.image_ids.size() = 171
+  Cluster 1 with 176 images
+  Cluster 2 with 171 images
+  Cluster 3 with 187 images
+  Cluster 4 with 204 images
+  Cluster 5 with 184 images
+Clusters have 922 images
+
+==============================================================================
+Reconstructing clusters
+==============================================================================
+
+cluster = 0x7ffea003d710, cluster->image_ids.size() = 176
+cluster = 0x7ffea003d740, cluster->image_ids.size() = 171
+cluster = 0x7ffea003d680, cluster->image_ids.size() = 187
+cluster = 0x7ffea0039b80, cluster->image_ids.size() = 204
+cluster = 0x7ffea0039bb0, cluster->image_ids.size() = 184
+
+==============================================================================
+Merging clusters
+==============================================================================
+
+ 进入Merge 
+ &cluster = 0x7ffea0067210
+ cluster.child_clusters.size() = 2
+reconstruction_managers = 0x7ffea584c310
+ recon_man.first = 0x7ffea0039b80 recon_man.first->image_ids.size() = 204 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d680 recon_man.first->image_ids.size() = 187 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d740 recon_man.first->image_ids.size() = 171 , recon_man.second = 0
+ recon_man.first = 0x7ffea0039bb0 recon_man.first->image_ids.size() = 184 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d710 recon_man.first->image_ids.size() = 176 , recon_man.second = 0
+ 进入Merge 
+ &cluster = 0x7ffea003d8c0
+ cluster.child_clusters.size() = 2
+reconstruction_managers = 0x7ffea584c310
+ recon_man.first = 0x7ffea0039b80 recon_man.first->image_ids.size() = 204 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d680 recon_man.first->image_ids.size() = 187 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d740 recon_man.first->image_ids.size() = 171 , recon_man.second = 0
+ recon_man.first = 0x7ffea0039bb0 recon_man.first->image_ids.size() = 184 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d710 recon_man.first->image_ids.size() = 176 , recon_man.second = 0
+child_cluster.image_ids.size() = 187
+child_cluster的地址为 ：0x7ffea003d680
+ 进入Merge 
+ &cluster = 0x7ffea003d6b0
+ cluster.child_clusters.size() = 2
+reconstruction_managers = 0x7ffea584c310
+ recon_man.first = 0x7ffea0039b80 recon_man.first->image_ids.size() = 204 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d680 recon_man.first->image_ids.size() = 187 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d740 recon_man.first->image_ids.size() = 171 , recon_man.second = 0
+ recon_man.first = 0x7ffea0039bb0 recon_man.first->image_ids.size() = 184 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d710 recon_man.first->image_ids.size() = 176 , recon_man.second = 0
+child_cluster.image_ids.size() = 204
+child_cluster的地址为 ：0x7ffea0039b80
+child_cluster.image_ids.size() = 184
+child_cluster的地址为 ：0x7ffea0039bb0
+ reconstructions.size() =  0
+delete merged
+delete merged
+ 是叶子结点 
+child_cluster.image_ids.size() = 204
+child_cluster的地址为 ：0x7ffea003d6b0
+ reconstructions.size() =  0
+delete merged
+delete merged
+ 是叶子结点 
+child_cluster.image_ids.size() = 241
+child_cluster的地址为 ：0x7ffea003d8c0
+ 进入Merge 
+ &cluster = 0x7ffea003d8f0
+ cluster.child_clusters.size() = 2
+reconstruction_managers = 0x7ffea584c310
+ recon_man.first = 0x7ffea003d8c0 recon_man.first->image_ids.size() = 241 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d710 recon_man.first->image_ids.size() = 176 , recon_man.second = 0
+ recon_man.first = 0x7ffea003d740 recon_man.first->image_ids.size() = 171 , recon_man.second = 0
+child_cluster.image_ids.size() = 176
+child_cluster的地址为 ：0x7ffea003d710
+child_cluster.image_ids.size() = 171
+child_cluster的地址为 ：0x7ffea003d740
+ reconstructions.size() =  0
+delete merged
+delete merged
+ 是叶子结点 
+child_cluster.image_ids.size() = 197
+child_cluster的地址为 ：0x7ffea003d8f0
+ reconstructions.size() =  0
+delete merged
+delete merged
